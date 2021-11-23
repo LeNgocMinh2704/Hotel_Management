@@ -36,6 +36,8 @@ namespace Hotel_Management
 
         private void DashboardButton_Click_1(object sender, EventArgs e)
         {
+            uC_AddRoom1.Hide();
+            uC_AddUser1.Hide();
             Movepic(DashboardButton);
             uC_DashBoard1.Visible = true;
             uC_DashBoard1.BringToFront();
@@ -46,23 +48,32 @@ namespace Hotel_Management
             Movepic(RoomButton);
             uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
+            uC_AddRoom1.Hide();
+            uC_AddRoom1.clear();
+            uC_AddRoom1.Show();
         }
 
         private void ClientButton_Click(object sender, EventArgs e)
         {
+            uC_AddRoom1.Hide();
             Movepic(ClientButton);
-            uC_AddUser2.Visible = true;
-            uC_AddUser2.BringToFront();
+            uC_AddUser1.Visible = true;
+            uC_AddUser1.BringToFront();
+            uC_AddUser1.Hide();
+            uC_AddUser1.Clear();
+            uC_AddUser1.Show();
         }
 
         private void ReservationButton_Click(object sender, EventArgs e)
         {
+            uC_AddUser1.Hide();
+            uC_AddRoom1.Hide();
             Movepic(ReservationButton);
         }
 
         private void CloseButton_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -78,6 +89,28 @@ namespace Hotel_Management
             Movepic(ClientDetailButton);
             uC_CustomerDetails1.Visible = true;
             uC_CustomerDetails1.BringToFront();
+        }
+
+        private void ServiesButton_Click(object sender, EventArgs e)
+        {
+            uC_AddRoom1.Hide();
+            uC_AddUser1.Hide();
+            Movepic(ServiesButton);
+
+        }
+
+        private void SettingButton_Click(object sender, EventArgs e)
+        {
+            uC_AddRoom1.Hide();
+            uC_AddUser1.Hide();
+            Movepic(SettingButton);
+
+        }
+
+        private void Management_Load(object sender, EventArgs e)
+        {
+            uC_AddRoom1.Visible = false;
+
         }
     }
 }

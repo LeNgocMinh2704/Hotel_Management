@@ -30,6 +30,7 @@ namespace Hotel_Management
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.UsernameInput = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,14 +41,19 @@ namespace Hotel_Management
             this.LoginButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lableError = new System.Windows.Forms.Label();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.ShowPass = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.HidePass = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePass)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowForm1
@@ -137,6 +143,7 @@ namespace Hotel_Management
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(49, 40);
             this.guna2ControlBox1.TabIndex = 8;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // guna2ControlBox2
             // 
@@ -152,6 +159,7 @@ namespace Hotel_Management
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.Size = new System.Drawing.Size(49, 40);
             this.guna2ControlBox2.TabIndex = 9;
+            this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
             // 
             // LoginButton
             // 
@@ -178,6 +186,7 @@ namespace Hotel_Management
             this.LoginButton.TabIndex = 10;
             this.LoginButton.Text = "LOGIN";
             this.LoginButton.UseTransparentBackground = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // guna2AnimateWindow1
             // 
@@ -191,16 +200,16 @@ namespace Hotel_Management
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 12;
             // 
-            // label2
+            // lableError
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(77, 613);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(279, 25);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Forgot Username or Password ?";
+            this.lableError.AutoSize = true;
+            this.lableError.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lableError.ForeColor = System.Drawing.Color.DimGray;
+            this.lableError.Location = new System.Drawing.Point(77, 613);
+            this.lableError.Name = "lableError";
+            this.lableError.Size = new System.Drawing.Size(281, 25);
+            this.lableError.TabIndex = 13;
+            this.lableError.Text = "Wrong Username or Password ?";
             // 
             // guna2DragControl1
             // 
@@ -261,6 +270,34 @@ namespace Hotel_Management
             this.guna2GradientPanel1.Size = new System.Drawing.Size(174, 102);
             this.guna2GradientPanel1.TabIndex = 18;
             // 
+            // ShowPass
+            // 
+            this.ShowPass.Image = ((System.Drawing.Image)(resources.GetObject("ShowPass.Image")));
+            this.ShowPass.ImageRotate = 0F;
+            this.ShowPass.Location = new System.Drawing.Point(386, 411);
+            this.ShowPass.Name = "ShowPass";
+            this.ShowPass.ShadowDecoration.Parent = this.ShowPass;
+            this.ShowPass.Size = new System.Drawing.Size(37, 39);
+            this.ShowPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ShowPass.TabIndex = 19;
+            this.ShowPass.TabStop = false;
+            this.ShowPass.Click += new System.EventHandler(this.ShowPass_Click);
+            this.ShowPass.MouseHover += new System.EventHandler(this.ShowPass_MouseHover);
+            // 
+            // HidePass
+            // 
+            this.HidePass.Image = ((System.Drawing.Image)(resources.GetObject("HidePass.Image")));
+            this.HidePass.ImageRotate = 0F;
+            this.HidePass.Location = new System.Drawing.Point(386, 411);
+            this.HidePass.Name = "HidePass";
+            this.HidePass.ShadowDecoration.Parent = this.HidePass;
+            this.HidePass.Size = new System.Drawing.Size(37, 39);
+            this.HidePass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HidePass.TabIndex = 20;
+            this.HidePass.TabStop = false;
+            this.HidePass.Click += new System.EventHandler(this.HidePass_Click);
+            this.HidePass.MouseHover += new System.EventHandler(this.HidePass_MouseHouver);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -269,7 +306,7 @@ namespace Hotel_Management
             this.ClientSize = new System.Drawing.Size(1178, 688);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.guna2ToggleSwitch1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lableError);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.guna2ControlBox2);
@@ -278,6 +315,8 @@ namespace Hotel_Management
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.UsernameInput);
+            this.Controls.Add(this.ShowPass);
+            this.Controls.Add(this.HidePass);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
@@ -286,6 +325,8 @@ namespace Hotel_Management
             this.Text = "LoginForm";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,11 +345,14 @@ namespace Hotel_Management
         private Guna.UI2.WinForms.Guna2GradientButton LoginButton;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lableError;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox ShowPass;
+        private Guna.UI2.WinForms.Guna2PictureBox HidePass;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

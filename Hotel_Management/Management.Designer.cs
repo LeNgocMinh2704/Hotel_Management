@@ -35,12 +35,6 @@ namespace Hotel_Management
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.MenuPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.CenterPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.TopPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.CheckOutButton = new Guna.UI2.WinForms.Guna2Button();
             this.ClientDetailButton = new Guna.UI2.WinForms.Guna2Button();
             this.ServiesButton = new Guna.UI2.WinForms.Guna2Button();
@@ -51,15 +45,20 @@ namespace Hotel_Management
             this.ClientButton = new Guna.UI2.WinForms.Guna2Button();
             this.ReservationButton = new Guna.UI2.WinForms.Guna2Button();
             this.DashboardButton = new Guna.UI2.WinForms.Guna2Button();
-            this.uC_AddUser2 = new Hotel_Management.UC_AddUser();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.CenterPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.uC_CustomerDetails1 = new Hotel_Management.UC_CustomerDetails();
+            this.uC_CheckOut1 = new Hotel_Management.UC_CheckOut();
             this.uC_AddUser1 = new Hotel_Management.UC_AddUser();
             this.uC_AddRoom1 = new Hotel_Management.UC_AddRoom();
             this.uC_DashBoard1 = new Hotel_Management.UC_DashBoard();
-            this.uC_CheckOut1 = new Hotel_Management.UC_CheckOut();
-            this.uC_CustomerDetails1 = new Hotel_Management.UC_CustomerDetails();
+            this.TopPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.MenuPanel.SuspendLayout();
-            this.CenterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSlide)).BeginInit();
+            this.CenterPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -96,43 +95,6 @@ namespace Hotel_Management
             this.MenuPanel.Size = new System.Drawing.Size(241, 838);
             this.MenuPanel.TabIndex = 0;
             this.MenuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuPanel_Paint);
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 30;
-            this.guna2Elipse3.TargetControl = this.CenterPanel;
-            // 
-            // CenterPanel
-            // 
-            this.CenterPanel.Controls.Add(this.uC_CustomerDetails1);
-            this.CenterPanel.Controls.Add(this.uC_CheckOut1);
-            this.CenterPanel.Controls.Add(this.uC_AddUser2);
-            this.CenterPanel.Controls.Add(this.uC_AddUser1);
-            this.CenterPanel.Controls.Add(this.uC_AddRoom1);
-            this.CenterPanel.Controls.Add(this.uC_DashBoard1);
-            this.CenterPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CenterPanel.Location = new System.Drawing.Point(241, 67);
-            this.CenterPanel.Name = "CenterPanel";
-            this.CenterPanel.ShadowDecoration.Parent = this.CenterPanel;
-            this.CenterPanel.Size = new System.Drawing.Size(1227, 768);
-            this.CenterPanel.TabIndex = 2;
-            // 
-            // TopPanel
-            // 
-            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopPanel.Location = new System.Drawing.Point(241, 0);
-            this.TopPanel.Name = "TopPanel";
-            this.TopPanel.ShadowDecoration.Parent = this.TopPanel;
-            this.TopPanel.Size = new System.Drawing.Size(1227, 67);
-            this.TopPanel.TabIndex = 1;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 50;
             // 
             // CheckOutButton
             // 
@@ -204,6 +166,7 @@ namespace Hotel_Management
             this.ServiesButton.Size = new System.Drawing.Size(184, 57);
             this.ServiesButton.TabIndex = 7;
             this.ServiesButton.Text = "Services";
+            this.ServiesButton.Click += new System.EventHandler(this.ServiesButton_Click);
             // 
             // PicSlide
             // 
@@ -234,10 +197,10 @@ namespace Hotel_Management
             this.CloseButton.ForeColor = System.Drawing.Color.White;
             this.CloseButton.HoverState.Parent = this.CloseButton;
             this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
-            this.CloseButton.Location = new System.Drawing.Point(51, 687);
+            this.CloseButton.Location = new System.Drawing.Point(57, 683);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.ShadowDecoration.Parent = this.CloseButton;
-            this.CloseButton.Size = new System.Drawing.Size(141, 57);
+            this.CloseButton.Size = new System.Drawing.Size(158, 57);
             this.CloseButton.TabIndex = 5;
             this.CloseButton.Text = "Close";
             this.CloseButton.UseTransparentBackground = true;
@@ -265,6 +228,7 @@ namespace Hotel_Management
             this.SettingButton.Size = new System.Drawing.Size(184, 57);
             this.SettingButton.TabIndex = 4;
             this.SettingButton.Text = "Setting";
+            this.SettingButton.Click += new System.EventHandler(this.SettingButton_Click);
             // 
             // RoomButton
             // 
@@ -364,22 +328,53 @@ namespace Hotel_Management
             this.DashboardButton.UseTransparentBackground = true;
             this.DashboardButton.Click += new System.EventHandler(this.DashboardButton_Click_1);
             // 
-            // uC_AddUser2
+            // guna2DragControl1
             // 
-            this.uC_AddUser2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.uC_AddUser2.Location = new System.Drawing.Point(0, 0);
-            this.uC_AddUser2.Name = "uC_AddUser2";
-            this.uC_AddUser2.Size = new System.Drawing.Size(1227, 768);
-            this.uC_AddUser2.TabIndex = 3;
+            this.guna2DragControl1.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 30;
+            this.guna2Elipse3.TargetControl = this.CenterPanel;
+            // 
+            // CenterPanel
+            // 
+            this.CenterPanel.Controls.Add(this.uC_AddUser1);
+            this.CenterPanel.Controls.Add(this.uC_AddRoom1);
+            this.CenterPanel.Controls.Add(this.uC_DashBoard1);
+            this.CenterPanel.Controls.Add(this.uC_CustomerDetails1);
+            this.CenterPanel.Controls.Add(this.uC_CheckOut1);
+            this.CenterPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CenterPanel.Location = new System.Drawing.Point(241, 67);
+            this.CenterPanel.Name = "CenterPanel";
+            this.CenterPanel.ShadowDecoration.Parent = this.CenterPanel;
+            this.CenterPanel.Size = new System.Drawing.Size(1227, 768);
+            this.CenterPanel.TabIndex = 2;
+            // 
+            // uC_CustomerDetails1
+            // 
+            this.uC_CustomerDetails1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.uC_CustomerDetails1.Location = new System.Drawing.Point(0, 0);
+            this.uC_CustomerDetails1.Name = "uC_CustomerDetails1";
+            this.uC_CustomerDetails1.Size = new System.Drawing.Size(1227, 768);
+            this.uC_CustomerDetails1.TabIndex = 5;
+            this.uC_CustomerDetails1.Visible = false;
+            // 
+            // uC_CheckOut1
+            // 
+            this.uC_CheckOut1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.uC_CheckOut1.Location = new System.Drawing.Point(0, 0);
+            this.uC_CheckOut1.Name = "uC_CheckOut1";
+            this.uC_CheckOut1.Size = new System.Drawing.Size(1227, 771);
+            this.uC_CheckOut1.TabIndex = 4;
             // 
             // uC_AddUser1
             // 
             this.uC_AddUser1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.uC_AddUser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_AddUser1.Location = new System.Drawing.Point(0, 771);
+            this.uC_AddUser1.Location = new System.Drawing.Point(-3, -3);
             this.uC_AddUser1.Name = "uC_AddUser1";
-            this.uC_AddUser1.Size = new System.Drawing.Size(1227, 0);
-            this.uC_AddUser1.TabIndex = 1;
+            this.uC_AddUser1.Size = new System.Drawing.Size(1227, 768);
+            this.uC_AddUser1.TabIndex = 3;
             this.uC_AddUser1.Visible = false;
             // 
             // uC_AddRoom1
@@ -390,6 +385,7 @@ namespace Hotel_Management
             this.uC_AddRoom1.Name = "uC_AddRoom1";
             this.uC_AddRoom1.Size = new System.Drawing.Size(1227, 771);
             this.uC_AddRoom1.TabIndex = 2;
+            this.uC_AddRoom1.Visible = false;
             // 
             // uC_DashBoard1
             // 
@@ -400,21 +396,18 @@ namespace Hotel_Management
             this.uC_DashBoard1.Size = new System.Drawing.Size(1227, 771);
             this.uC_DashBoard1.TabIndex = 0;
             // 
-            // uC_CheckOut1
+            // TopPanel
             // 
-            this.uC_CheckOut1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.uC_CheckOut1.Location = new System.Drawing.Point(0, 0);
-            this.uC_CheckOut1.Name = "uC_CheckOut1";
-            this.uC_CheckOut1.Size = new System.Drawing.Size(1227, 771);
-            this.uC_CheckOut1.TabIndex = 4;
+            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPanel.Location = new System.Drawing.Point(241, 0);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.ShadowDecoration.Parent = this.TopPanel;
+            this.TopPanel.Size = new System.Drawing.Size(1227, 67);
+            this.TopPanel.TabIndex = 1;
             // 
-            // uC_CustomerDetails1
+            // guna2Elipse4
             // 
-            this.uC_CustomerDetails1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uC_CustomerDetails1.Location = new System.Drawing.Point(0, 0);
-            this.uC_CustomerDetails1.Name = "uC_CustomerDetails1";
-            this.uC_CustomerDetails1.Size = new System.Drawing.Size(1227, 768);
-            this.uC_CustomerDetails1.TabIndex = 5;
+            this.guna2Elipse4.BorderRadius = 50;
             // 
             // Management
             // 
@@ -430,9 +423,10 @@ namespace Hotel_Management
             this.Name = "Management";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Management";
+            this.Load += new System.EventHandler(this.Management_Load);
             this.MenuPanel.ResumeLayout(false);
-            this.CenterPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicSlide)).EndInit();
+            this.CenterPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -457,11 +451,10 @@ namespace Hotel_Management
         private Guna.UI2.WinForms.Guna2Button ServiesButton;
         private Guna.UI2.WinForms.Guna2PictureBox PicSlide;
         private UC_DashBoard uC_DashBoard1;
-        private UC_AddUser uC_AddUser1;
         private Guna.UI2.WinForms.Guna2Button CheckOutButton;
         private Guna.UI2.WinForms.Guna2Button ClientDetailButton;
         private UC_AddRoom uC_AddRoom1;
-        private UC_AddUser uC_AddUser2;
+        private UC_AddUser uC_AddUser1;
         private UC_CustomerDetails uC_CustomerDetails1;
         private UC_CheckOut uC_CheckOut1;
     }
