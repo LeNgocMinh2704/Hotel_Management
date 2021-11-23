@@ -13,3 +13,5 @@ C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.csp
 C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_AddRoom.resources
 C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_AddUser.resources
 C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_DashBoard.resources
+C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_CheckOut.resources
+C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_CustomerDetails.resources

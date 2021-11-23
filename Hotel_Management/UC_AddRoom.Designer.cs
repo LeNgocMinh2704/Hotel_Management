@@ -65,7 +65,7 @@ namespace Hotel_Management
             this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(658, 303);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(886, 303);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(295, 36);
@@ -84,7 +84,7 @@ namespace Hotel_Management
             this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.ItemHeight = 30;
             this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(658, 191);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(886, 191);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Size = new System.Drawing.Size(295, 36);
@@ -94,7 +94,7 @@ namespace Hotel_Management
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(653, 30);
+            this.label1.Location = new System.Drawing.Point(881, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 28);
             this.label1.TabIndex = 4;
@@ -114,7 +114,7 @@ namespace Hotel_Management
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(658, 80);
+            this.guna2TextBox1.Location = new System.Drawing.Point(886, 80);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
@@ -127,7 +127,7 @@ namespace Hotel_Management
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(653, 142);
+            this.label2.Location = new System.Drawing.Point(881, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 28);
             this.label2.TabIndex = 6;
@@ -137,7 +137,7 @@ namespace Hotel_Management
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(653, 361);
+            this.label3.Location = new System.Drawing.Point(881, 361);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 28);
             this.label3.TabIndex = 7;
@@ -147,7 +147,7 @@ namespace Hotel_Management
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(653, 247);
+            this.label4.Location = new System.Drawing.Point(881, 247);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 28);
             this.label4.TabIndex = 8;
@@ -167,7 +167,7 @@ namespace Hotel_Management
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(658, 416);
+            this.guna2TextBox2.Location = new System.Drawing.Point(886, 416);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
@@ -192,7 +192,7 @@ namespace Hotel_Management
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(650, 507);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(878, 507);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(303, 49);
@@ -233,7 +233,7 @@ namespace Hotel_Management
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 30);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(93, 30);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 62;
