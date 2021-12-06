@@ -15,3 +15,5 @@ C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_
 C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_DashBoard.resources
 C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_CheckOut.resources
 C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_CustomerDetails.resources
+C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_Food.resources
+C:\Users\lengo\source\repos\DoAn\Hotel_Management\obj\Debug\Hotel_Management.UC_Setting.resources
